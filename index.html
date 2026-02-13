@@ -1,140 +1,283 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- PRIMARY SEO -->
-<title>Baba Computers | Premium Computer Sales & Printer Service Center</title>
-<meta name="description" content="Baba Computers - Authorized Sales & Service Center for Epson, Canon, Brother & HP Printers. We deal in Laptops, Desktops, Cartridges & Spare Parts. Call 7889338071.">
-<meta name="keywords" content="Baba Computers, Printer Repair, Epson Service, Canon Printer Service, Brother Printer Repair, HP Printer Repair, Laptop Shop, Desktop Sales, Computer Store">
-<meta name="author" content="Baba Computers">
-<meta name="robots" content="index, follow">
+<title>Baba Computer | Official Store Anantnag</title>
 
-<!-- Open Graph (Facebook / WhatsApp Share) -->
-<meta property="og:title" content="Baba Computers | Premium Computer Sales & Service">
-<meta property="og:description" content="Professional Printer Repair & Computer Sales. Call 7889338071">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://stem-ux.github.io/">
+<meta name="description" content="Baba Computer - Premium Computer Sales & Service Store in Anantnag. Laptops, Desktops, Printers & Repairs. Near Ashajipora Bridge, Bypass Stadium Road.">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Baba Computers">
-<meta name="twitter:description" content="Premium Computer & Printer Service Center">
-
-<!-- Favicon -->
-<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1041/1041916.png">
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- Structured Data (VERY IMPORTANT FOR GOOGLE) -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "Baba Computers",
- "image": "https://stem-ux.github.io/",
- "telephone": "+917889338071",
- "description": "Authorized Sales & Service Center for Epson, Canon, Brother & HP Printers. Laptops, Desktops, Cartridges & Spare Parts.",
- "address": {
-   "@type": "PostalAddress",
-   "addressCountry": "India"
- }
-}
-</script>
-
-<!-- Google Analytics (Replace G-XXXX with your ID) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXX');
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
-body{background:#0a0f1c;color:white;overflow-x:hidden;}
-header{position:fixed;width:100%;padding:20px 8%;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);}
-.logo{font-size:26px;font-weight:800;color:#00f0ff;}
-nav a{color:white;margin-left:25px;text-decoration:none;font-weight:500;}
-.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 10%;background:linear-gradient(135deg,#0a0f1c,#001f3f,#002b80);}
-.hero h1{font-size:55px;font-weight:800;background:linear-gradient(90deg,#00f0ff,#0072ff);-webkit-background-clip:text;color:transparent;}
-.hero p{margin-top:20px;font-size:20px;color:#cbd5e1;max-width:700px;}
-.btn{margin-top:35px;padding:14px 35px;border-radius:40px;background:linear-gradient(90deg,#00f0ff,#0072ff);border:none;font-weight:700;cursor:pointer;color:black;text-decoration:none;}
-.services{padding:80px 10%;background:#0f172a;text-align:center;}
-.services h2{font-size:34px;margin-bottom:50px;color:#00f0ff;}
-.service-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
-.card{background:#1f2937;padding:35px;border-radius:20px;}
-.card i{font-size:40px;color:#00f0ff;margin-bottom:20px;}
-.contact{padding:60px 10%;text-align:center;background:#0a0f1c;}
-footer{padding:20px;text-align:center;background:#050914;color:#94a3b8;}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:white;padding:15px;border-radius:50%;font-size:24px;}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
+}
+
+/* ===== HEADER ===== */
+
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+padding:20px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+letter-spacing:3px;
+background:linear-gradient(45deg,#ff0000,#ff6600);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{filter:drop-shadow(0 0 5px #ff0000);}
+to{filter:drop-shadow(0 0 20px #ff6600);}
+}
+
+nav a{
+color:white;
+margin-left:30px;
+text-decoration:none;
+font-weight:600;
+position:relative;
+}
+
+nav a::after{
+content:'';
+position:absolute;
+width:0%;
+height:2px;
+background:#ff0000;
+bottom:-5px;
+left:0;
+transition:0.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),
+url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:800;
+background:linear-gradient(45deg,#ff0000,#ff9900);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:slideDown 1.2s ease;
+}
+
+@keyframes slideDown{
+from{opacity:0;transform:translateY(-50px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+color:#ccc;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 40px;
+border:none;
+border-radius:50px;
+background:linear-gradient(45deg,#ff0000,#ff6600);
+color:white;
+font-weight:600;
+cursor:pointer;
+transition:0.4s;
+box-shadow:0 10px 30px rgba(255,0,0,0.4);
+text-decoration:none;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(255,0,0,0.8);
+}
+
+/* ===== SECTION ===== */
+
+.section{
+padding:100px 10%;
+text-align:center;
+}
+
+.section h2{
+font-size:40px;
+margin-bottom:60px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+border-radius:20px;
+padding:40px;
+width:300px;
+transition:0.5s;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+transform:translateY(-15px) scale(1.05);
+background:linear-gradient(45deg,#1a1a1a,#222);
+}
+
+.card h3{
+margin-bottom:20px;
+color:#ff6600;
+}
+
+/* ===== LOCATION ===== */
+
+.location p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+background:#000;
+padding:40px;
+text-align:center;
+}
+
+.social a{
+color:white;
+margin:0 20px;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.social a:hover{
+color:#ff0000;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+.hero h1{
+font-size:36px;
+}
+header{
+padding:15px 20px;
+}
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo"><i class="fa-solid fa-computer"></i> Baba Computers</div>
+<div class="logo">BABA COMPUTER</div>
 <nav>
-<a href="#">Home</a>
 <a href="#services">Services</a>
+<a href="#location">Location</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Premium Computer Sales & Printer Service</h1>
-<p>Authorized Sales & Service Center for Epson, Canon, Brother & HP Printers.<br>
-We Deal in Laptops, Desktops, Cartridges & Spare Parts.</p>
-<a href="tel:7889338071" class="btn"><i class="fa-solid fa-phone"></i> Call 7889338071</a>
+<h1>Baba Computer</h1>
+<p>Premium Computer Sales & Service Store in Anantnag</p>
+<a href="tel:+917889338071" class="btn">Call Now</a>
 </section>
 
-<section class="services" id="services">
+<section class="section" id="services">
 <h2>Our Services</h2>
-<div class="service-container">
+<div class="cards">
+
 <div class="card">
-<i class="fa-solid fa-print"></i>
-<h3>Printer Sales & Repair</h3>
-<p>Epson, Canon, Brother & HP Professional Services</p>
+<h3>Laptop & Desktop Sales</h3>
+<p>High performance branded systems and accessories.</p>
 </div>
+
 <div class="card">
-<i class="fa-solid fa-laptop"></i>
-<h3>Laptops & Desktops</h3>
-<p>High Performance Systems for Business & Home</p>
+<h3>Printer Sales & Service</h3>
+<p>Complete printer repair & cartridge solutions.</p>
 </div>
+
 <div class="card">
-<i class="fa-solid fa-car-battery"></i>
-<h3>Cartridges</h3>
-<p>Original Ink & Toner Cartridges Available</p>
+<h3>Expert Computer Repair</h3>
+<p>Hardware & software troubleshooting by professionals.</p>
 </div>
-<div class="card">
-<i class="fa-solid fa-screwdriver-wrench"></i>
-<h3>Spare Parts</h3>
-<p>Quality Spare Parts with Fast Installation</p>
-</div>
+
 </div>
 </section>
 
-<section class="contact" id="contact">
-<h2>Contact Baba Computers</h2>
-<p><i class="fa-solid fa-phone"></i> +91 7889338071</p>
-<p>Your Trusted Computer & Printer Service Partner</p>
+<section class="section location" id="location">
+<h2>Visit Our Store</h2>
+<p><strong>Near Ashajipora Bridge, Bypass Stadium Road, Anantnag</strong></p>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Near+Ashajipora+Bridge+Bypass+Stadium+Road+Anantnag" target="_blank">
+Open in Google Maps
+</a>
+</section>
+
+<section class="section" id="contact">
+<h2>Connect With Us</h2>
+
+<a class="btn" href="https://wa.me/917889338071" target="_blank">WhatsApp</a>
+<br><br>
+
+<div class="social">
+<a href="https://www.instagram.com/baba_computers_07" target="_blank">Instagram</a>
+<a href="#">Facebook - Baba Computers</a>
+</div>
+
 </section>
 
 <footer>
-© 2026 Baba Computers | All Rights Reserved
+<p>© 2026 Baba Computer | Official Website</p>
+<p>Serving Anantnag With Premium Technology Solutions</p>
 </footer>
-
-<a href="https://wa.me/917889338071" class="whatsapp">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
 
 </body>
 </html>
