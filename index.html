@@ -3,280 +3,261 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baba Computer | Official Premium Sales & Service</title>
 
-<title>Baba Computer | Official Store Anantnag</title>
+<meta name="description" content="Baba Computer – Premium Computer Sales & Service Center. Laptop, Desktop, Printer Repair, Epson, Canon, HP & Brother Service. Professional and Trusted Computer Experts.">
 
-<meta name="description" content="Baba Computer - Premium Computer Sales & Service Store in Anantnag. Laptops, Desktops, Printers & Repairs. Near Ashajipora Bridge, Bypass Stadium Road.">
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Montserrat',sans-serif;
-scroll-behavior:smooth;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#0f0f0f;
-color:white;
-overflow-x:hidden;
+  background:#0f172a;
+  color:white;
+  overflow-x:hidden;
 }
 
-/* ===== HEADER ===== */
-
+/* ===== NAVBAR ===== */
 header{
-position:fixed;
-width:100%;
-top:0;
-left:0;
-padding:20px 50px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
-z-index:1000;
+  position:fixed;
+  width:100%;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  backdrop-filter:blur(15px);
+  background:rgba(0,0,0,0.3);
+  z-index:1000;
 }
 
 .logo{
-font-size:28px;
-font-weight:800;
-letter-spacing:3px;
-background:linear-gradient(45deg,#ff0000,#ff6600);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-animation:glow 2s infinite alternate;
-}
-
-@keyframes glow{
-from{filter:drop-shadow(0 0 5px #ff0000);}
-to{filter:drop-shadow(0 0 20px #ff6600);}
+  font-size:26px;
+  font-weight:800;
+  background:linear-gradient(90deg,#00f0ff,#0072ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
 nav a{
-color:white;
-margin-left:30px;
-text-decoration:none;
-font-weight:600;
-position:relative;
+  margin-left:25px;
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+  transition:0.3s;
 }
 
-nav a::after{
-content:'';
-position:absolute;
-width:0%;
-height:2px;
-background:#ff0000;
-bottom:-5px;
-left:0;
-transition:0.3s;
+nav a:hover{
+  color:#00f0ff;
 }
 
-nav a:hover::after{
-width:100%;
-}
-
-/* ===== HERO ===== */
-
+/* ===== HERO SECTION ===== */
 .hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-text-align:center;
-background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),
-url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8');
-background-size:cover;
-background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 10%;
+  background:radial-gradient(circle at top left,#1e3a8a,#0f172a);
 }
 
 .hero h1{
-font-size:60px;
-font-weight:800;
-background:linear-gradient(45deg,#ff0000,#ff9900);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-animation:slideDown 1.2s ease;
+  font-size:55px;
+  font-weight:800;
+  margin-bottom:20px;
+  animation:fadeUp 1s ease forwards;
 }
 
-@keyframes slideDown{
-from{opacity:0;transform:translateY(-50px);}
-to{opacity:1;transform:translateY(0);}
+.hero span{
+  background:linear-gradient(90deg,#00f0ff,#38bdf8);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
 .hero p{
-margin-top:20px;
-font-size:20px;
-color:#ccc;
+  font-size:18px;
+  max-width:700px;
+  margin-bottom:30px;
+  opacity:0.8;
+  animation:fadeUp 1.5s ease forwards;
 }
 
 .btn{
-margin-top:30px;
-padding:15px 40px;
-border:none;
-border-radius:50px;
-background:linear-gradient(45deg,#ff0000,#ff6600);
-color:white;
-font-weight:600;
-cursor:pointer;
-transition:0.4s;
-box-shadow:0 10px 30px rgba(255,0,0,0.4);
-text-decoration:none;
+  padding:14px 35px;
+  border-radius:50px;
+  background:linear-gradient(90deg,#00f0ff,#0072ff);
+  color:black;
+  font-weight:700;
+  text-decoration:none;
+  transition:0.4s;
 }
 
 .btn:hover{
-transform:translateY(-5px);
-box-shadow:0 15px 40px rgba(255,0,0,0.8);
+  transform:scale(1.1);
+  box-shadow:0 0 20px #00f0ff;
 }
 
-/* ===== SECTION ===== */
-
-.section{
-padding:100px 10%;
-text-align:center;
+/* ===== SERVICES ===== */
+.services{
+  padding:100px 8%;
+  text-align:center;
 }
 
-.section h2{
-font-size:40px;
-margin-bottom:60px;
+.services h2{
+  font-size:38px;
+  margin-bottom:60px;
 }
 
-.cards{
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
 }
 
 .card{
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(15px);
-border-radius:20px;
-padding:40px;
-width:300px;
-transition:0.5s;
-border:1px solid rgba(255,255,255,0.1);
+  padding:40px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(20px);
+  transition:0.4s;
 }
 
 .card:hover{
-transform:translateY(-15px) scale(1.05);
-background:linear-gradient(45deg,#1a1a1a,#222);
+  transform:translateY(-15px);
+  background:rgba(0,240,255,0.1);
+  box-shadow:0 0 30px rgba(0,240,255,0.3);
 }
 
 .card h3{
-margin-bottom:20px;
-color:#ff6600;
+  margin-bottom:15px;
+  font-size:22px;
 }
 
-/* ===== LOCATION ===== */
-
-.location p{
-font-size:18px;
-margin-bottom:20px;
+/* ===== CONTACT ===== */
+.contact{
+  padding:100px 8%;
+  background:#0b1120;
 }
 
-/* ===== FOOTER ===== */
+.contact h2{
+  font-size:36px;
+  margin-bottom:25px;
+}
 
-footer{
-background:#000;
-padding:40px;
-text-align:center;
+.contact p{
+  margin-bottom:10px;
+  opacity:0.9;
+}
+
+.social{
+  margin-top:20px;
 }
 
 .social a{
-color:white;
-margin:0 20px;
-font-weight:600;
-text-decoration:none;
-transition:0.3s;
+  margin-right:20px;
+  font-weight:600;
+  text-decoration:none;
+  color:#00f0ff;
+  transition:0.3s;
 }
 
 .social a:hover{
-color:#ff0000;
+  color:white;
+}
+
+iframe{
+  width:100%;
+  height:300px;
+  border:none;
+  border-radius:20px;
+  margin-top:30px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  padding:25px;
+  text-align:center;
+  background:#000814;
+  font-size:14px;
+  opacity:0.7;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
 }
 
 /* ===== MOBILE ===== */
-
 @media(max-width:768px){
-.hero h1{
-font-size:36px;
+  .hero h1{font-size:38px;}
+  header{padding:15px 5%;}
 }
-header{
-padding:15px 20px;
-}
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">BABA COMPUTER</div>
-<nav>
-<a href="#services">Services</a>
-<a href="#location">Location</a>
-<a href="#contact">Contact</a>
-</nav>
+  <div class="logo">Baba Computer</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-<h1>Baba Computer</h1>
-<p>Premium Computer Sales & Service Store in Anantnag</p>
-<a href="tel:+917889338071" class="btn">Call Now</a>
+  <h1>Welcome to <span>Baba Computer</span></h1>
+  <p>Premium Computer Sales & Service Center. Expert in Laptop, Desktop, Printer Repair, Epson, Canon, HP & Brother Service Solutions.</p>
+  <a href="tel:7898338071" class="btn">Call Now</a>
 </section>
 
-<section class="section" id="services">
-<h2>Our Services</h2>
-<div class="cards">
-
-<div class="card">
-<h3>Laptop & Desktop Sales</h3>
-<p>High performance branded systems and accessories.</p>
-</div>
-
-<div class="card">
-<h3>Printer Sales & Service</h3>
-<p>Complete printer repair & cartridge solutions.</p>
-</div>
-
-<div class="card">
-<h3>Expert Computer Repair</h3>
-<p>Hardware & software troubleshooting by professionals.</p>
-</div>
-
-</div>
+<section id="services" class="services">
+  <h2>Our Expertise</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>💻 Laptop & Desktop Sales</h3>
+      <p>Latest branded computers with warranty & best pricing.</p>
+    </div>
+    <div class="card">
+      <h3>🖨 Printer Repair</h3>
+      <p>Professional Epson, Canon, HP & Brother printer service.</p>
+    </div>
+    <div class="card">
+      <h3>🛠 Spare Parts</h3>
+      <p>Original accessories, cartridges & hardware components.</p>
+    </div>
+    <div class="card">
+      <h3>🚀 On-Site Support</h3>
+      <p>Fast & reliable doorstep computer repair solutions.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section location" id="location">
-<h2>Visit Our Store</h2>
-<p><strong>Near Ashajipora Bridge, Bypass Stadium Road, Anantnag</strong></p>
-<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Near+Ashajipora+Bridge+Bypass+Stadium+Road+Anantnag" target="_blank">
-Open in Google Maps
-</a>
-</section>
+<section id="contact" class="contact">
+  <h2>Contact Baba Computer</h2>
+  <p><strong>📍 Address:</strong> YOUR FULL ADDRESS</p>
+  <p><strong>📞 Phone:</strong> 7898338071</p>
+  <p><strong>📧 Email:</strong> your@email.com</p>
 
-<section class="section" id="contact">
-<h2>Connect With Us</h2>
+  <div class="social">
+    <a href="https://instagram.com/yourinstagram" target="_blank">Instagram</a>
+    <a href="https://facebook.com/yourfacebook" target="_blank">Facebook</a>
+    <a href="https://wa.me/917898338071" target="_blank">WhatsApp</a>
+  </div>
 
-<a class="btn" href="https://wa.me/917889338071" target="_blank">WhatsApp</a>
-<br><br>
-
-<div class="social">
-<a href="https://www.instagram.com/baba_computers_07" target="_blank">Instagram</a>
-<a href="#">Facebook - Baba Computers</a>
-</div>
-
+  <iframe src="PASTE_GOOGLE_MAP_LINK_HERE" loading="lazy"></iframe>
 </section>
 
 <footer>
-<p>© 2026 Baba Computer | Official Website</p>
-<p>Serving Anantnag With Premium Technology Solutions</p>
+  © 2026 Baba Computer | Official Premium Sales & Service
 </footer>
 
 </body>
