@@ -3,253 +3,201 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Baba Computers | Anantnag</title>
 
-<meta name="description" content="Baba Computers Anantnag - Premium Laptop Sales, Printer Repair, Computer Accessories & Service Center in Jammu & Kashmir.">
+<title>Baba Computers Anantnag | Laptop Shop & Printer Repair</title>
+
+<meta name="description" content="Baba Computers Anantnag – Best Laptop Shop, Printer Repair Center, Gaming PC Setup, CCTV Installation & Accessories Store in Jammu & Kashmir. Brother – At Your Side.">
+<meta name="keywords" content="Baba Computers Anantnag, Laptop Shop Anantnag, Printer Repair Anantnag, Gaming PC Anantnag, CCTV Installation Anantnag">
 <meta name="author" content="Suhail Wani">
+<meta name="robots" content="index, follow">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ComputerStore",
+ "name": "Baba Computers Anantnag",
+ "image": "https://yourdomain.com/logo.webp",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "Bypass Stadium Road, Near Ashajipora Bridge",
+   "addressLocality": "Anantnag",
+   "addressRegion": "Jammu & Kashmir",
+   "postalCode": "192101",
+   "addressCountry": "IN"
+ },
+ "telephone": "+917898338071",
+ "openingHours": "Mo-Sa 09:00-19:00",
+ "priceRange": "$$"
+}
+</script>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0a0a0f;color:#fff;overflow-x:hidden}
 
-body{
-background:#000;
-color:#fff;
-overflow-x:hidden;
-scroll-behavior:smooth;
+/* HERO */
+.hero{
+background:url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;
 }
-
-/* ===== LOADING SCREEN ===== */
-#loader{
-position:fixed;
-width:100%;
-height:100vh;
-background:#000;
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:9999;
-}
-#loader h1{
+.hero-content{background:rgba(0,0,0,0.6);padding:40px;border-radius:20px}
+.hero h1{
 font-size:40px;
 background:linear-gradient(90deg,#00f0ff,#ff00c8);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-animation:pulse 2s infinite;
+-webkit-background-clip:text;-webkit-text-fill-color:transparent;
 }
-@keyframes pulse{
-0%,100%{opacity:1}
-50%{opacity:0.3}
-}
-
-/* ===== FLOATING GLOW ORBS ===== */
-.orb{
-position:fixed;
-border-radius:50%;
-filter:blur(80px);
-opacity:0.3;
-z-index:-1;
-}
-.orb1{width:300px;height:300px;background:#00f0ff;top:10%;left:5%;}
-.orb2{width:400px;height:400px;background:#ff00c8;bottom:10%;right:10%;}
-
-/* ===== NAVBAR ===== */
-nav{
-position:fixed;
-width:100%;
-padding:20px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(15px);
-z-index:1000;
-}
-nav h2{
-font-weight:800;
-background:linear-gradient(90deg,#00f0ff,#ff00c8);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-nav a{
-color:#fff;
-margin-left:20px;
-text-decoration:none;
-transition:0.3s;
-}
-nav a:hover{color:#00f0ff}
-
-/* ===== HERO ===== */
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-.hero h1{
-font-size:65px;
-background:linear-gradient(90deg,#00f0ff,#ff00c8,#00f0ff);
-background-size:300%;
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-animation:shine 6s linear infinite;
-}
-@keyframes shine{
-0%{background-position:0%}
-100%{background-position:300%}
-}
-.hero p{margin-top:20px;color:#ccc}
 .btn{
-margin-top:30px;
-padding:14px 35px;
-border-radius:50px;
-border:2px solid #00f0ff;
-color:#00f0ff;
-background:none;
-cursor:pointer;
-transition:0.4s;
+margin-top:20px;padding:12px 30px;border-radius:30px;
+border:2px solid #00f0ff;color:#00f0ff;background:none;cursor:pointer;
 }
-.btn:hover{
-background:#00f0ff;
-color:#000;
-box-shadow:0 0 20px #00f0ff;
-transform:scale(1.05);
-}
+.btn:hover{background:#00f0ff;color:#000}
 
-/* ===== SECTIONS ===== */
-.section{
-padding:100px 10%;
-text-align:center;
-}
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
+/* SECTION */
+.section{padding:80px 10%;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:40px}
 .card{
 background:rgba(255,255,255,0.05);
-padding:30px;
-border-radius:20px;
-backdrop-filter:blur(20px);
-transition:0.5s;
+backdrop-filter:blur(10px);
+border-radius:20px;overflow:hidden;
+transition:0.4s;
 }
-.card:hover{
-transform:translateY(-10px) scale(1.05);
-box-shadow:0 0 25px rgba(0,240,255,0.4);
+.card img{width:100%;height:180px;object-fit:cover}
+.card-content{padding:20px}
+.card:hover{transform:translateY(-8px);box-shadow:0 0 20px #00f0ff}
+
+/* PARALLAX */
+.parallax{
+background:url('https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1600&auto=format&fit=crop') fixed center/cover;
+padding:80px 10%;
 }
 
-/* ===== REVIEW SLIDER ===== */
-.review{
-margin-top:40px;
-font-style:italic;
-color:#ccc;
-}
+/* FAQ */
+.faq h3{margin-top:20px;color:#00f0ff}
 
-/* ===== CONTACT ===== */
-.contact a{
-display:block;
-color:#00f0ff;
-margin:10px 0;
-text-decoration:none;
-}
-iframe{
-width:100%;
-height:400px;
-border:none;
-border-radius:20px;
-margin-top:30px;
-}
+/* CONTACT */
+.contact a{display:block;color:#00f0ff;margin:8px 0;text-decoration:none}
+iframe{width:100%;height:300px;border:0;border-radius:20px;margin-top:20px}
 
-/* ===== FOOTER ===== */
-footer{
-text-align:center;
-padding:30px;
-background:rgba(255,255,255,0.05);
-}
+/* FOOTER */
+footer{text-align:center;padding:30px;background:#000}
 footer span{color:#00f0ff}
 
-/* ===== WHATSAPP FLOAT ===== */
+/* WHATSAPP */
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:#fff;
-padding:15px 18px;
-border-radius:50%;
-text-decoration:none;
-font-size:22px;
-box-shadow:0 0 15px #25D366;
-}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:768px){
-.hero h1{font-size:38px}
+position:fixed;bottom:20px;right:20px;
+width:55px;height:55px;background:#25D366;color:#fff;
+border-radius:50%;display:flex;align-items:center;justify-content:center;
+font-size:26px;text-decoration:none;
+box-shadow:0 0 20px #25D366;
 }
 </style>
 </head>
 
 <body>
 
-<div id="loader"><h1>Baba Computers</h1></div>
-
-<div class="orb orb1"></div>
-<div class="orb orb2"></div>
-
-<nav>
-<h2>BABA COMPUTERS</h2>
-<div>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-
 <section class="hero">
-<h1>Baba Computers</h1>
-<p>Premium Laptop & Printer Sales | Service Center – Anantnag</p>
+<div class="hero-content">
+<h1>Baba Computers Anantnag</h1>
+<p>Brother – At Your Side</p>
+<p>Leading Laptop Shop & Printer Repair Center in Anantnag, Jammu & Kashmir.</p>
 <a href="tel:7898338071"><button class="btn">Call Now</button></a>
+</div>
 </section>
 
-<section id="services" class="section">
-<h2>Our Services</h2>
+<section class="section">
+<h2>Our Premium Services</h2>
+
 <div class="grid">
-<div class="card">Laptop Sales & Service</div>
-<div class="card">Printer Repair (HP, Canon, Epson, Brother)</div>
-<div class="card">Accessories & Spare Parts</div>
-<div class="card">On-Site Computer Support</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop" loading="lazy" alt="Laptop Sales in Anantnag">
+<div class="card-content">
+<h3>💻 Laptop Sales & Service</h3>
+<p>New branded laptops & professional repair in Anantnag.</p>
+</div>
 </div>
 
-<div class="review">
-⭐ 4.9 Rating – Trusted by Customers in Anantnag
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=800&auto=format&fit=crop" loading="lazy" alt="Printer Repair Anantnag">
+<div class="card-content">
+<h3>🖨 Printer Repair & Accessories</h3>
+<p>HP, Canon, Epson, Brother service center.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?q=80&w=800&auto=format&fit=crop" loading="lazy" alt="Gaming PC Setup">
+<div class="card-content">
+<h3>🎮 Gaming PC Setup</h3>
+<p>Custom gaming PC builds in Kashmir.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581090700227-1e8c79f8c3a0?q=80&w=800&auto=format&fit=crop" loading="lazy" alt="CCTV Installation">
+<div class="card-content">
+<h3>📹 CCTV Installation</h3>
+<p>Professional camera installation service.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop" loading="lazy" alt="Second Hand Laptop Sale">
+<div class="card-content">
+<h3>♻ Second-Hand Buy & Sale</h3>
+<p>Trusted used laptop deals in Anantnag.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop" loading="lazy" alt="Computer Accessories">
+<div class="card-content">
+<h3>🔌 All Accessories</h3>
+<p>SSD, RAM, Keyboard, Mouse & more.</p>
+</div>
+</div>
+
 </div>
 </section>
 
-<section id="contact" class="section contact">
-<h2>Visit Us</h2>
-<p>📍 Bypass Stadium Road, Near Ashajipora Bridge, Janglat Mandi, Anantnag, Jammu & Kashmir 192101</p>
-<a href="tel:7898338071">📞 7898338071</a>
-<a href="https://wa.me/917898338071" target="_blank">💬 WhatsApp</a>
-<a href="https://instagram.com/baba_computers07" target="_blank">📷 Instagram</a>
+<section class="parallax section">
+<h2>Why Choose Baba Computers?</h2>
+<p>Trusted Computer Store in Anantnag with quality service and genuine products.</p>
+</section>
 
-<iframe src="https://www.google.com/maps?q=Baba+Computers+Anantnag&output=embed"></iframe>
+<section class="section faq">
+<h2>Frequently Asked Questions</h2>
+
+<h3>Do you repair laptops in Anantnag?</h3>
+<p>Yes, Baba Computers provides expert laptop repair services in Anantnag.</p>
+
+<h3>Do you sell second-hand laptops?</h3>
+<p>Yes, we buy and sell second-hand laptops in Anantnag.</p>
+
+<h3>Do you install CCTV cameras?</h3>
+<p>Yes, we provide CCTV installation services in Anantnag and nearby areas.</p>
+</section>
+
+<section class="section contact">
+<h2>Contact Us</h2>
+<p>📍 Bypass Stadium Road, Near Ashajipora Bridge, Anantnag, J&K 192101</p>
+<a href="tel:7898338071">📞 7898338071</a>
+<a href="https://wa.me/917898338071" target="_blank">💬 WhatsApp Chat</a>
+
+<iframe loading="lazy" src="https://www.google.com/maps?q=Baba+Computers+Anantnag&output=embed"></iframe>
 </section>
 
 <footer>
-© 2026 Baba Computers | Created by <span>Suhail Wani</span>
+© 2026 Baba Computers Anantnag | Created by <span>Suhail Wani</span>
 </footer>
 
-<a href="https://wa.me/917898338071" class="whatsapp" target="_blank">💬</a>
-
-<script>
-window.onload=function(){
-setTimeout(function(){
-document.getElementById("loader").style.display="none";
-},2000);
-};
-</script>
+<a href="https://wa.me/917898338071?text=Hello%20Baba%20Computers%20Anantnag" class="whatsapp" target="_blank">💬</a>
 
 </body>
 </html>
