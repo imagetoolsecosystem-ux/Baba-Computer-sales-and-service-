@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +24,7 @@
    "@type": "ComputerStore",
    "@id": "https://yourdomain.com/#business",
    "name": "Baba Computers Anantnag",
-   "telephone": "+917898338071",
+   "telephone": "+917889338071",
    "priceRange": "$$",
    "address": {
     "@type": "PostalAddress",
@@ -52,6 +51,10 @@
   {
    "@type": "Service",
    "serviceType": "Gaming PC Setup in Anantnag"
+  },
+  {
+   "@type": "Service",
+   "serviceType": "CCTV Installation in Anantnag"
   }
  ]
 }
@@ -81,7 +84,7 @@
    "name": "Do you install CCTV cameras?",
    "acceptedAnswer": {
      "@type": "Answer",
-     "text": "Yes, we provide CCTV installation services in Anantnag."
+     "text": "Yes, we provide professional CCTV installation services in Anantnag."
    }
  }]
 }
@@ -98,7 +101,7 @@ height:90vh;display:flex;align-items:center;justify-content:center;text-align:ce
 position:relative;
 }
 .hero::after{
-content:"";position:absolute;inset:0;background:rgba(0,0,0,0.6);
+content:"";position:absolute;inset:0;background:rgba(0,0,0,0.65);
 }
 .hero-content{
 position:relative;z-index:2;padding:40px;border-radius:20px;
@@ -106,7 +109,7 @@ background:rgba(255,255,255,0.05);
 backdrop-filter:blur(15px);
 }
 .hero h1{
-font-size:40px;
+font-size:42px;
 background:linear-gradient(90deg,#00f0ff,#ff00c8);
 -webkit-background-clip:text;-webkit-text-fill-color:transparent;
 }
@@ -120,14 +123,31 @@ transition:0.4s;
 /* SECTION */
 .section{padding:80px 10%;text-align:center}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:40px}
+
+/* CARD */
 .card{
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(15px);
-border-radius:20px;overflow:hidden;
+position:relative;
+border-radius:20px;
+overflow:hidden;
+height:260px;
+display:flex;
+align-items:flex-end;
+background-size:cover;
+background-position:center;
 transition:0.4s;
 }
-.card img{width:100%;height:180px;object-fit:cover}
-.card-content{padding:20px}
+.card::after{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.6);
+}
+.card-content{
+position:relative;
+z-index:2;
+padding:20px;
+width:100%;
+}
 .card:hover{transform:translateY(-8px);box-shadow:0 0 25px #00f0ff}
 
 /* PARALLAX */
@@ -162,7 +182,7 @@ box-shadow:0 0 20px #25D366;
 <h1>Baba Computers Anantnag</h1>
 <p>Brother – At Your Side</p>
 <p>Leading Laptop Shop, Printer Repair, Gaming PC & CCTV Installation in Anantnag.</p>
-<a href="tel:7898338071"><button class="btn">Call Now</button></a>
+<a href="tel:+917889338071"><button class="btn">Call Now</button></a>
 </div>
 </section>
 
@@ -171,43 +191,38 @@ box-shadow:0 0 20px #25D366;
 
 <div class="grid">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop" loading="lazy">
+<div class="card" style="background-image:url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop');">
 <div class="card-content">
 <h3>💻 Laptop Sales & Service</h3>
 <p>New branded laptops & expert repair in Anantnag.</p>
 </div>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=800&auto=format&fit=crop" loading="lazy">
+<div class="card" style="background-image:url('https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200&auto=format&fit=crop');">
 <div class="card-content">
 <h3>🖨 Printer Repair & Accessories</h3>
 <p>All accessories related to printers & laptops.</p>
 </div>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?q=80&w=800&auto=format&fit=crop" loading="lazy">
+<div class="card" style="background-image:url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?q=80&w=1200&auto=format&fit=crop');">
 <div class="card-content">
 <h3>🎮 Gaming PC Setup</h3>
 <p>Custom gaming PC builds in Kashmir.</p>
 </div>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581090700227-1e8c79f8c3a0?q=80&w=800&auto=format&fit=crop" loading="lazy">
-<div class="card-content">
-<h3>📹 CCTV Installation</h3>
-<p>Professional camera installation service.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop" loading="lazy">
+<div class="card" style="background-image:url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop');">
 <div class="card-content">
 <h3>♻ Second-Hand Buy & Sale</h3>
 <p>Trusted used laptop deals in Anantnag.</p>
+</div>
+</div>
+
+<div class="card" style="background-image:url('https://images.unsplash.com/photo-1581090700227-1e8c79f8c3a0?q=80&w=1200&auto=format&fit=crop');">
+<div class="card-content">
+<h3>📹 CCTV Installation</h3>
+<p>Professional camera installation service.</p>
 </div>
 </div>
 
@@ -222,8 +237,8 @@ box-shadow:0 0 20px #25D366;
 <section class="section contact">
 <h2>Contact Us</h2>
 <p>📍 Bypass Stadium Road, Near Ashajipora Bridge, Anantnag, J&K 192101</p>
-<a href="tel:7898338071">📞 7898338071</a>
-<a href="https://wa.me/917898338071" target="_blank">💬 WhatsApp Chat</a>
+<a href="tel:+917889338071">📞 +91 7889338071</a>
+<a href="https://wa.me/917889338071" target="_blank">💬 WhatsApp Chat</a>
 <iframe loading="lazy" src="https://www.google.com/maps?q=Baba+Computers+Anantnag&output=embed"></iframe>
 </section>
 
@@ -240,7 +255,7 @@ style="width:160px;border-radius:15px;box-shadow:0 0 20px #00f0ff;">
 © 2026 Baba Computers Anantnag | Created by <span>Suhail Wani</span>
 </footer>
 
-<a href="https://wa.me/917898338071?text=Hello%20Baba%20Computers%20Anantnag" class="whatsapp" target="_blank">💬</a>
+<a href="https://wa.me/917889338071?text=Hello%20Baba%20Computers%20Anantnag" class="whatsapp" target="_blank">💬</a>
 
 </body>
 </html>
