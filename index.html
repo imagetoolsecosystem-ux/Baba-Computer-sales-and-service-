@@ -3,299 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baba Computers 1 Anantnag | Best Laptop Shop in India</title>
 
-<title>Baba Computers India | Best Laptop Shop & CCTV Installation</title>
+<meta name="description" content="Baba Computers 1 Anantnag - Best Laptop Shop in Anantnag serving entire India. Second Hand Laptops, CCTV Installation, Printer Repair, Gaming PC Setup, Accessories. Contact +917889338071">
+<meta name="keywords" content="Laptop Shop Anantnag, Best Laptop Shop India, CCTV Installation India, Printer Repair India, Gaming PC India, Second Hand Laptop Anantnag">
+<meta name="author" content="Baba Computers 1">
 
-<meta name="description" content="Baba Computers Anantnag – Best Laptop Shop in Anantnag expanding across India providing Second Hand Laptops, Printer Repair, CCTV Installation & Gaming PC Setup nationwide.">
-<meta name="keywords" content="Laptop Shop Anantnag, Best Laptop Shop India, CCTV Installation India, Printer Repair India, Gaming PC Setup India">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Suhail Wani">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
---bg:#0b0f1a;
---text:#fff;
---primary:#00f0ff;
+--primary:#00f5ff;
+--dark:#0f0f0f;
+--light:#ffffff;
+--glass:rgba(255,255,255,0.08);
 }
-.light{
---bg:#fff;
---text:#000;
---primary:#0066ff;
-}
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
-body{background:var(--bg);color:var(--text);transition:.3s;overflow-x:hidden}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+body{background:var(--dark);color:#fff;overflow-x:hidden}
+body.light{background:#f4f4f4;color:#111}
 
-/* HERO */
-.hero{
-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1600&auto=format&fit=crop') center/cover;
-}
-.hero h1{font-size:40px;color:var(--primary)}
-.typing{margin-top:10px;height:24px}
+section{padding:80px 8%;position:relative}
 
-/* BUTTON */
+h1,h2,h3{font-weight:700}
+
 .btn{
-display:inline-flex;
-align-items:center;
-gap:8px;
-padding:10px 20px;
+display:inline-block;
+padding:12px 28px;
 border-radius:30px;
-border:2px solid var(--primary);
-color:var(--primary);
+background:linear-gradient(90deg,#00f5ff,#00aaff,#00f5ff);
+background-size:200%;
+color:#000;
+font-weight:600;
 text-decoration:none;
-margin:10px 5px;
-transition:.3s;
+transition:0.4s;
 }
-.btn:hover{background:var(--primary);color:#000}
+.btn:hover{background-position:200%}
 
-/* SECTION */
-.section{padding:70px 8%;text-align:center}
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
-}
-.card{
-height:250px;
+.glass{
+background:var(--glass);
+backdrop-filter:blur(8px);
 border-radius:20px;
-display:flex;
-align-items:flex-end;
-background-size:cover;
-background-position:center;
+padding:25px;
+transition:0.3s ease;
+}
+
+.card{
 position:relative;
 overflow:hidden;
+border-radius:20px;
+transition:transform .3s ease;
 }
-.card::after{
-content:"";
+.card:hover{transform:translateY(-8px)}
+
+.card::before{
+content:'';
 position:absolute;
-inset:0;
-background:rgba(0,0,0,0.6);
+inset:-2px;
+background:linear-gradient(90deg,#00f5ff,#ff00ff,#00f5ff);
+background-size:300%;
+z-index:-1;
+animation:borderMove 6s linear infinite;
+border-radius:22px;
 }
-.card-content{
-position:relative;
-z-index:2;
+@keyframes borderMove{
+0%{background-position:0%}
+100%{background-position:300%}
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#000,#111);
+}
+
+.hero h1{
+font-size:42px;
+background:linear-gradient(90deg,#00f5ff,#fff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.reveal{opacity:0;transform:translateY(40px);transition:1s}
+.reveal.show{opacity:1;transform:translateY(0)}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.service-bg{
+background-size:cover;
+background-position:center;
+min-height:250px;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
 padding:20px;
+color:#fff;
 }
 
-/* CONTACT */
-.contact a{
-display:block;
-color:var(--primary);
-margin:8px 0;
-text-decoration:none;
-}
-iframe{
-width:100%;
-height:250px;
-border:0;
-border-radius:15px;
-margin-top:20px;
+footer{
+background:#000;
+padding:40px 8%;
+text-align:center;
+font-size:14px;
 }
 
-/* TOGGLE */
 .toggle{
 position:fixed;
 top:20px;
 right:20px;
-background:var(--primary);
-color:#000;
-padding:8px 15px;
-border-radius:20px;
 cursor:pointer;
-font-size:14px;
+font-size:20px;
 }
 
-/* WHATSAPP */
-.whatsapp{
+.float-btn{
 position:fixed;
 bottom:20px;
 right:20px;
+display:flex;
+flex-direction:column;
+gap:15px;
+z-index:1000;
+}
+
+.float-btn a{
 width:55px;
 height:55px;
-background:#25D366;
 border-radius:50%;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
+background:#25D366;
+color:#fff;
 text-decoration:none;
 }
-.whatsapp svg{width:28px;fill:#fff}
 
-/* FOOTER */
-footer{text-align:center;padding:30px}
-.footer-text{font-size:14px;margin-top:10px}
-.powered{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:6px;
-color:var(--primary);
-text-decoration:none;
-margin-top:10px;
+.instagram{background:#E1306C}
+
+@media(max-width:768px){
+.hero h1{font-size:28px}
 }
-.powered svg{width:16px;fill:var(--primary)}
 </style>
-
-<!-- LOCAL + OFFER CATALOG -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"ComputerStore",
-"name":"Baba Computers Anantnag",
-"telephone":"+917889338071",
-"priceRange":"₹₹",
-"address":{
-"@type":"PostalAddress",
-"streetAddress":"Bypass Stadium Road, Near Ashajipora Bridge",
-"addressLocality":"Anantnag",
-"addressRegion":"Jammu & Kashmir",
-"postalCode":"192101",
-"addressCountry":"IN"
-},
-"areaServed":"India",
-"hasOfferCatalog":{
-"@type":"OfferCatalog",
-"name":"Computer Services",
-"itemListElement":[
-{"@type":"Offer","itemOffered":{"@type":"Service","name":"Second Hand Laptops"}},
-{"@type":"Offer","itemOffered":{"@type":"Service","name":"CCTV Installation"}},
-{"@type":"Offer","itemOffered":{"@type":"Service","name":"Printer Repair"}},
-{"@type":"Offer","itemOffered":{"@type":"Service","name":"Gaming PC Setup"}}
-]
-},
-"sameAs":["https://instagram.com/babacomputersanantnag"]
-}
-</script>
-
-<!-- NATIONAL ORGANIZATION SCHEMA -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"Organization",
-"name":"Baba Computers India",
-"url":"https://babacomputersindia.in",
-"contactPoint":{
-"@type":"ContactPoint",
-"telephone":"+917889338071",
-"contactType":"customer service",
-"areaServed":"IN",
-"availableLanguage":["English","Hindi","Urdu"]
-}
-}
-</script>
-
-<!-- FAQ BOOST -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
-{"@type":"Question","name":"Where is the best laptop shop in Anantnag?",
-"acceptedAnswer":{"@type":"Answer","text":"Baba Computers Anantnag is the leading laptop shop offering quality laptops with warranty."}},
-{"@type":"Question","name":"Do you provide CCTV installation in India?",
-"acceptedAnswer":{"@type":"Answer","text":"Yes, we provide professional CCTV installation services expanding across India."}},
-{"@type":"Question","name":"Do you repair printers in Anantnag?",
-"acceptedAnswer":{"@type":"Answer","text":"Yes, we offer expert printer repair and cartridge refill services."}}
-]
-}
-</script>
-
 </head>
 <body>
 
-<div class="toggle" onclick="toggleMode()">Toggle Mode</div>
+<div class="toggle" onclick="toggleMode()">🌓</div>
 
 <section class="hero">
-<div>
-<h1>Baba Computers India</h1>
-<div class="typing" id="typing"></div>
+<h1 id="typed">Asalamualaikum – Baba Computers 1</h1>
+<p>Brother at your side | Serving Entire India 🇮🇳</p>
+<br>
+<a href="https://wa.me/917889338071" class="btn">Chat on WhatsApp</a>
+</section>
 
-<a href="tel:+917889338071" class="btn">📞 Call Now</a>
+<section>
+<h2 class="reveal">Our Services</h2>
+<br><br>
+<div class="services">
 
-<a href="https://instagram.com/babacomputersanantnag" target="_blank" class="btn">
-<svg viewBox="0 0 24 24">
-<path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2z"/>
-</svg>
-Instagram
-</a>
+<div class="card reveal glass service-bg" style="background-image:url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8');">
+<h3>Second Hand Laptop Sale & Buy</h3>
+<p>Affordable laptops across India</p>
+</div>
+
+<div class="card reveal glass service-bg" style="background-image:url('https://images.unsplash.com/photo-1581090700227-1e8c3e4a5f98');">
+<h3>CCTV Installation</h3>
+<p>Advanced security camera systems</p>
+</div>
+
+<div class="card reveal glass">
+<h3>Gaming PC Setup</h3>
+<p>High performance custom builds</p>
+</div>
+
+<div class="card reveal glass">
+<h3>Printer Repair & Accessories</h3>
+<p>All laptop & printer accessories available</p>
+</div>
 
 </div>
 </section>
 
-<section class="section">
-<h2>Our Services Across India</h2>
-<div class="grid">
-
-<div class="card" style="background-image:url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1600&auto=format&fit=crop')">
-<div class="card-content"><h3>Second Hand Laptops</h3></div>
-</div>
-
-<div class="card" style="background-image:url('https://images.unsplash.com/photo-1581091870627-3b5debb1b4c7?q=80&w=1600&auto=format&fit=crop')">
-<div class="card-content"><h3>CCTV Installation</h3></div>
-</div>
-
-<div class="card" style="background-image:url('https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1600&auto=format&fit=crop')">
-<div class="card-content"><h3>Printer Repair</h3></div>
-</div>
-
+<section>
+<h2 class="reveal">Why Choose Us?</h2>
+<br>
+<div class="glass reveal">
+<p>✔ Best Laptop Shop in Anantnag<br>
+✔ Serving Entire India<br>
+✔ CCTV Installation India<br>
+✔ Printer Repair Services India<br>
+✔ Gaming PC Setup India<br>
+✔ Genuine Accessories</p>
 </div>
 </section>
 
-<section class="section contact">
-<h2>Contact Us</h2>
-<p>📍 Bypass Stadium Road, Near Ashajipora Bridge, Anantnag, Jammu & Kashmir</p>
-<a href="tel:+917889338071">📞 +91 7889338071</a>
-<a href="https://wa.me/917889338071?text=Asalamualaikum%20Baba%20Computers">💬 WhatsApp Chat</a>
-<iframe loading="lazy" src="https://www.google.com/maps?q=Baba+Computers+Anantnag&output=embed"></iframe>
+<section>
+<h2 class="reveal">FAQ</h2>
+<div class="glass reveal">
+<h3>Do you provide services across India?</h3>
+<p>Yes, Baba Computers 1 serves customers across India.</p>
+<h3>Do you sell second hand laptops?</h3>
+<p>Yes, we buy and sell second hand laptops.</p>
+</div>
 </section>
 
 <footer>
-
-<div class="footer-text">
-Baba Computers Anantnag is the leading Laptop Shop in Anantnag and expanding across India providing
-Second Hand Laptops, CCTV Installation, Printer Repair, Gaming PC Setup and Computer Accessories nationwide.
-</div>
-
-© 2026 Baba Computers India
-
-<a href="https://rahilwani8090-cpu.github.io/image-tools-/" target="_blank" class="powered">
-<svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>
+<p>Baba Computers 1 Anantnag | Best Laptop Shop in India | Contact: +917889338071</p>
+<br>
+<p>
+<a href="https://rahilwani8090-cpu.github.io/image-tools-/" target="_blank" style="color:#00f5ff;text-decoration:none;">
 Powered by ImageToolsEcosystem
 </a>
-
+</p>
 </footer>
 
-<a href="https://wa.me/917889338071?text=Asalamualaikum%20Baba%20Computers" class="whatsapp">
-<svg viewBox="0 0 24 24">
-<path d="M12 2a10 10 0 0 0-8.94 14.52L2 22l5.65-1.05A10 10 0 1 0 12 2z"/>
+<div class="float-btn">
+<a href="https://wa.me/917889338071" target="_blank">
+<svg width="24" fill="white" viewBox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
 </svg>
 </a>
+<a href="https://instagram.com" target="_blank" class="instagram">
+<svg width="24" fill="white" viewBox="0 0 24 24">
+<path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5z"/>
+</svg>
+</a>
+</div>
 
 <script>
-const texts=[
-"Brother – At Your Side",
-"Best Laptop Shop in Anantnag",
-"CCTV Installation Experts India",
-"Printer Repair Specialists",
-"Gaming PC Setup Across India"
-];
-let i=0,j=0,current="",isDeleting=false;
-function type(){
-current=texts[i];
-document.getElementById("typing").textContent=current.substring(0,j);
-if(!isDeleting && j++===current.length){isDeleting=true;setTimeout(type,1000);}
-else if(isDeleting && j--===0){isDeleting=false;i=(i+1)%texts.length;}
-setTimeout(type,isDeleting?50:100);
+function toggleMode(){
+document.body.classList.toggle("light");
 }
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},{threshold:0.1});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+let text="Asalamualaikum – Baba Computers 1 Anantnag";
+let i=0;
+function type(){
+if(i<text.length){
+document.getElementById("typed").innerHTML+=text.charAt(i);
+i++;
+setTimeout(type,50);
+}
+}
+document.getElementById("typed").innerHTML="";
 type();
-function toggleMode(){document.body.classList.toggle("light");}
 </script>
 
 </body>
