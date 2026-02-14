@@ -6,8 +6,8 @@
 
 <title>Baba Computers | 4.9⭐ Computer Store in Anantnag</title>
 
-<meta name="description" content="Baba Computers - 4.9⭐ Rated Computer Store in Anantnag. Laptop Sales, Desktop Repair, Accessories & Service. Visit us at Bypass Stadium Road, Janglat Mandi.">
-<meta name="keywords" content="Baba Computers Anantnag, laptop repair Anantnag, computer shop near me, desktop sales Janglat Mandi">
+<meta name="description" content="Baba Computers - 4.9⭐ Rated Computer Store in Anantnag. Official Brother Service Centre. Laptop Sales, Desktop Repair, Printers & Accessories. Visit us at Bypass Stadium Road, Janglat Mandi.">
+<meta name="keywords" content="Baba Computers Anantnag, Brother Service Centre, laptop repair Anantnag, computer shop near me, desktop sales Janglat Mandi, Brother printers, Epson printers, Canon printers">
 <meta name="robots" content="index, follow">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -27,7 +27,57 @@ justify-content:center;
 align-items:center;
 text-align:center;
 background:radial-gradient(circle at center,#111 0%,#000 100%);
+position:relative;
+overflow:hidden;
 }
+
+.hero::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:
+linear-gradient(45deg, transparent 30%, rgba(0,113,227,0.03) 50%, transparent 70%),
+linear-gradient(-45deg, transparent 30%, rgba(0,198,255,0.03) 50%, transparent 70%);
+background-size:200% 200%;
+animation:bgShift 15s ease infinite;
+pointer-events:none;
+z-index:0;
+}
+
+@keyframes bgShift{
+0%,100%{background-position:0% 50%}
+50%{background-position:100% 50%}
+}
+
+.hero > *{position:relative;z-index:1}
+
+.tagline{
+font-size:20px;
+font-weight:600;
+background:linear-gradient(90deg,#0071e3,#00c6ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-clip:text;
+margin-bottom:10px;
+text-transform:uppercase;
+letter-spacing:2px;
+}
+
+.official-badge{
+display:inline-block;
+background:rgba(0,113,227,0.1);
+border:2px solid #0071e3;
+border-radius:50px;
+padding:8px 20px;
+font-size:14px;
+font-weight:600;
+color:#00c6ff;
+margin-bottom:15px;
+}
+
 .hero h1{font-size:50px;margin-bottom:20px}
 .hero p{max-width:600px;margin-bottom:30px}
 
@@ -57,11 +107,42 @@ border-radius:20px;
 padding:30px;
 transition:0.5s;
 transform-style:preserve-3d;
+position:relative;
+overflow:hidden;
 }
+
+.card::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:
+repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,113,227,0.02) 10px, rgba(0,113,227,0.02) 20px),
+repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0,198,255,0.02) 10px, rgba(0,198,255,0.02) 20px);
+pointer-events:none;
+opacity:0;
+transition:0.5s;
+}
+
+.card:hover::before{opacity:1}
+
 .card:hover{
 transform:rotateY(8deg) rotateX(8deg) scale(1.05);
 }
 .card img{width:100%;border-radius:12px;margin-bottom:20px}
+
+.service-tag{
+display:inline-block;
+background:linear-gradient(90deg,#0071e3,#00c6ff);
+color:#fff;
+padding:4px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:600;
+margin-top:10px;
+}
 
 .reveal{opacity:0;transform:translateY(60px);transition:1s}
 .reveal.active{opacity:1;transform:translateY(0)}
@@ -79,12 +160,37 @@ padding:40px 8%;
 text-align:center;
 color:#777;
 }
+
+.powered-by{
+margin-top:20px;
+font-size:14px;
+color:#999;
+}
+
+.powered-by a{
+color:#0071e3;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.powered-by a:hover{
+color:#00c6ff;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:36px}
+.tagline{font-size:16px}
+section{padding:60px 5%}
+}
 </style>
 </head>
 
 <body>
 
 <section class="hero">
+<div class="tagline">BROTHER AT YOUR SIDE</div>
+<div class="official-badge">🏢 Official Brother Service Centre</div>
 <h1>Baba Computers</h1>
 <p>4.9 ⭐ Rated Computer Sales & Service Center in Anantnag. Trusted Performance. Premium Experience.</p>
 
@@ -102,21 +208,45 @@ color:#777;
 <div class="products">
 
 <div class="card reveal">
-<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
-<h3>Laptops</h3>
-<p>High-performance laptops for business, students & gaming.</p>
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptops and PCs">
+<h3>Laptops & PCs</h3>
+<p>High-performance laptops and PCs for business, students & gaming. Complete range of accessories available.</p>
+<span class="service-tag">Sales & Service</span>
 </div>
 
 <div class="card reveal">
-<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
-<h3>Desktop Systems</h3>
-<p>Custom-built desktops & office workstations.</p>
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7" alt="Desktop Systems and PCs">
+<h3>Desktop Systems & PCs</h3>
+<p>Custom-built desktops, office workstations & all PC configurations. Full accessories in stock.</p>
+<span class="service-tag">Sales & Service</span>
 </div>
 
 <div class="card reveal">
-<img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3">
+<img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6" alt="Brother Printers">
+<h3>Brother Printers</h3>
+<p>Complete range of Brother printers with official service support. All accessories available.</p>
+<span class="service-tag">Official Service Centre</span>
+</div>
+
+<div class="card reveal">
+<img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6" alt="Epson and Canon Printers">
+<h3>Epson & Canon Printers</h3>
+<p>Full range of Epson and Canon printers. Professional service and genuine accessories.</p>
+<span class="service-tag">Sales & Service</span>
+</div>
+
+<div class="card reveal">
+<img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6" alt="All Printer Brands">
+<h3>All Printer Brands</h3>
+<p>Complete range: Brother, Epson, Canon, HP & more. All accessories and consumables in stock.</p>
+<span class="service-tag">Sales & Service</span>
+</div>
+
+<div class="card reveal">
+<img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3" alt="Computer Accessories">
 <h3>Accessories & Repairs</h3>
-<p>Printers, storage, keyboards, upgrades & professional repair service.</p>
+<p>Storage, keyboards, mouse, cables, cartridges, toners & all computer accessories. Professional repair service.</p>
+<span class="service-tag">Sales & Service</span>
 </div>
 
 </div>
@@ -127,7 +257,8 @@ color:#777;
 
 <iframe 
 src="https://www.google.com/maps?q=Bypass+Stadium+Road,+near+Ashajipora+Bridge,+Janglat+Mandi,+Anantnag,+Jammu+and+Kashmir+192101&output=embed"
-loading="lazy">
+loading="lazy"
+title="Baba Computers Location Map">
 </iframe>
 
 <p class="reveal" style="margin-top:20px;">
@@ -140,7 +271,10 @@ Jammu and Kashmir 192101
 </section>
 
 <footer>
-© 2026 Baba Computers | All Rights Reserved
+<p>© 2026 Baba Computers | All Rights Reserved</p>
+<div class="powered-by">
+Powered by <a href="tel:+917889338071">Baba Computers</a>
+</div>
 </footer>
 
 <script>
@@ -155,6 +289,7 @@ reveals[i].classList.add("active");
 }
 }
 window.addEventListener("scroll",reveal);
+reveal();
 </script>
 
 <!-- SEO SCHEMA -->
@@ -192,6 +327,10 @@ window.addEventListener("scroll",reveal);
 "@type":"Question",
 "name":"Where is Baba Computers located?",
 "acceptedAnswer":{"@type":"Answer","text":"We are located at Bypass Stadium Road near Ashajipora Bridge, Janglat Mandi, Anantnag."}
+},{
+"@type":"Question",
+"name":"Are you an official Brother service centre?",
+"acceptedAnswer":{"@type":"Answer","text":"Yes, we are an official Brother Service Centre offering sales and service for all Brother printers and accessories."}
 }]
 }
 </script>
